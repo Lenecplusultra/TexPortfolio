@@ -2,11 +2,11 @@ import React from 'react';
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
-const ProjectsCard = ({ title, des, src, githubLink }) => {
+const ProjectsCard = ({ title, des, src, githubLink, demoLink }) => {
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
       
-      {/* Consistent image box */}
+      {/* Project Image */}
       <div className="w-full aspect-video overflow-hidden rounded-lg">
         <img
           className="w-full h-full object-cover group-hover:scale-105 duration-300 cursor-pointer"
@@ -22,7 +22,7 @@ const ProjectsCard = ({ title, des, src, githubLink }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              {/* GitHub link */}
+              {/* GitHub Link */}
               <a
                 href={githubLink}
                 target="_blank"
@@ -31,9 +31,18 @@ const ProjectsCard = ({ title, des, src, githubLink }) => {
               >
                 <BsGithub />
               </a>
-              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                <FaGlobe />
-              </span>
+
+              {/* Demo Link */}
+              {demoLink && (
+                <a
+                  href={demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300"
+                >
+                  <FaGlobe />
+                </a>
+              )}
             </div>
           </div>
           <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
