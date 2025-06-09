@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '../layouts/Title';
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
           des="ChatGPT-style assistant to search documentation in natural language using React, FastAPI, LangChain & GPT. Deployed on Vercel + Render."
           src={projectOne}
           githubLink="https://github.com/Lenecplusultra/ai-doc-assistant"
-          demoLink="https://ai-doc-assistant-c0jgyhuwh-lenecplusultras-projects.vercel.app/"
+          demoLink="https://ai-doc-assistant-seven.vercel.app/"
         />
 
         {/* Project 2 - Restaurant System */}
@@ -40,7 +40,7 @@ const Projects = () => {
         <ProjectsCard
           title="My Portfolio Website"
           des="Personal developer portfolio built with React & TailwindCSS, showcasing projects, resume & contact form. Deployed on Vercel."
-          src={projectThree}
+          src={projectFour}
           githubLink="https://github.com/Lenecplusultra/TexPortfolio"
           demoLink="https://lenecplusultra.github.io/TexPortfolio/"
         />
