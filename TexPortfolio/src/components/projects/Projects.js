@@ -16,8 +16,8 @@ const Projects = () => {
           title="AI-Powered Internal Doc Assistant"
           des="ChatGPT-style assistant to search documentation in natural language using React, FastAPI, LangChain & GPT. Deployed on Vercel + Render."
           src={projectOne}
-          githubLink="https://github.com/Leneceplusultra/ai-doc-assistant"
-          demoLink="https://ai-doc-assistant-c0jgyhuwh-leneceplusultras-projects.vercel.app"
+          githubLink="https://github.com/Lenecplusultra/ai-doc-assistant"
+          demoLink="https://ai-doc-assistant-c0jgyhuwh-lenecplusultras-projects.vercel.app/"
         />
 
         {/* Project 2 - Restaurant System */}
@@ -33,7 +33,7 @@ const Projects = () => {
           title="Telecom Billing Platform"
           des="Automated billing + ML-based anomaly detection over Orange, MTN & Camtel; 80% clerical load cut."
           src={projectThree}
-          githubLink="https://github.com/texyonzo"
+          githubLink="https://github.com/Lenecplusultra"
         />
 
         {/* Project 4 - Portfolio Website */}
@@ -41,7 +41,7 @@ const Projects = () => {
           title="My Portfolio Website"
           des="Personal developer portfolio built with React & TailwindCSS, showcasing projects, resume & contact form. Deployed on Vercel."
           src={projectThree}
-          githubLink="https://github.com/texyonzo/portfolio"
+          githubLink="https://github.com/Lenecplusultra/TexPortfolio"
           demoLink="https://lenecplusultra.github.io/TexPortfolio/"
         />
       </div>
