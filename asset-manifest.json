@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/TexPortfolio/static/css/main.74a00f69.css",
-    "main.js": "/TexPortfolio/static/js/main.17c158b3.js",
+    "main.js": "/TexPortfolio/static/js/main.b28cd6b0.js",
+    "static/media/projectFour.jpg": "/TexPortfolio/static/media/projectFour.b7ba470ab0ff4c3c16ac.jpg",
     "static/media/projectTwo.jpg": "/TexPortfolio/static/media/projectTwo.f600db81a5380e74ca39.jpg",
     "static/media/projectThree.jpeg": "/TexPortfolio/static/media/projectThree.96f6c3887df1497081f4.jpeg",
     "static/media/bannerImg.png": "/TexPortfolio/static/media/bannerImg.01d95547969449de64a5.png",
@@ -10,10 +11,10 @@
     "static/media/projectOne.jpg": "/TexPortfolio/static/media/projectOne.c22f73f695c7af001f37.jpg",
     "index.html": "/TexPortfolio/index.html",
     "main.74a00f69.css.map": "/TexPortfolio/static/css/main.74a00f69.css.map",
-    "main.17c158b3.js.map": "/TexPortfolio/static/js/main.17c158b3.js.map"
+    "main.b28cd6b0.js.map": "/TexPortfolio/static/js/main.b28cd6b0.js.map"
   },
   "entrypoints": [
     "static/css/main.74a00f69.css",
-    "static/js/main.17c158b3.js"
+    "static/js/main.b28cd6b0.js"
   ]
 }
