@@ -11,6 +11,14 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
 
+        {/* Project 5 - Ads Streaming Pipeline*/}
+        <ProjectsCard
+          title="Real-Time Ads Streaming Pipeline"
+          des="A real-time data streaming system that ingests ad click events, processes them using Spark Structured Streaming, and persists aggregated insights in PostgreSQL."
+          src={projectFive}
+          githubLink="https://github.com/Lenecplusultra/real-time-ads-streaming-pipeline"
+          demoLink="https://rta-ads-dashboard.onrender.com/"
+        />
         {/* Project 1 - AI Doc Assistant */}
         <ProjectsCard
           title="AI-Powered Internal Doc Assistant"

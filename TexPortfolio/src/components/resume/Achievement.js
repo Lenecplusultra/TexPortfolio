@@ -16,6 +16,14 @@ const Achievement = () => {
         </div>
         <div className="mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
+            title="Adobe Student Ambassador"
+            subTitle="Kennesaw State University (Aug 2025 – Present)"
+            result="USA"
+            des="Represented Adobe on campus, produced tutorials, and connected students with Adobe creative resources"
+          />
+        </div>
+        <div className="mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+          <ResumeCard
             title="Member - ColorStack"
             subTitle="Kennesaw State University (Jan 2025 – Present)"
             result="USA"
