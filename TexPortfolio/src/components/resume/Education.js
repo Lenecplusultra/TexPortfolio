@@ -47,6 +47,12 @@ const Education = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Software Engineer Intern"
+            subTitle="PACI, Remote (Jan 2025 – Present)"
+            result="Atlanta GA"
+            des="Built and deployed a secure alumni networking platform with authentication, role-based access, and automated CI/CD pipeline via GitHub Actions."
+          />
+          <ResumeCard
+            title="Software Engineer Intern"
             subTitle="Intelligentsia SA, Yaounde (May 2023 – Aug 2023)"
             result="Cameroon"
             des="Led BPM platform dev w/ Bonita Studio for 20+ workflows; built secure APIs reducing manual work by 50% and improved response speed by 35% via QA."
