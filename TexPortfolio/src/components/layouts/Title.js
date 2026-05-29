@@ -1,14 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-const Title = ({title, des}) => {
+const Title = ({ title, des }) => {
   return (
-    <div className="flex flex-col gap-4 font-titleFont mb-14">
-      <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
-       {title}
-      </h3>
-      <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">{des}</h1>
+    <div className="flex flex-col gap-3 font-titleFont mb-14">
+      {/* Eyebrow: dot + label */}
+      <div className="flex items-center gap-2">
+        <span className="w-5 h-px bg-designColor inline-block" />
+        <h3 className="text-xs uppercase font-mono font-medium text-designColor tracking-[4px]">
+          {title}
+        </h3>
+        <span className="w-5 h-px bg-designColor inline-block" />
+      </div>
+      {/* Heading */}
+      <h1 className="text-4xl md:text-5xl text-white font-bold capitalize leading-tight">
+        {des}
+      </h1>
     </div>
   );
-}
+};
 
-export default Title
+export default Title;

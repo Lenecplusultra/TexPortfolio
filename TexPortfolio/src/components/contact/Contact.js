@@ -2,19 +2,10 @@ import React, { useState, useRef } from 'react';
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
 
-/*
-  EMAIL SETUP INSTRUCTIONS (one-time, free):
-  1. Go to https://www.emailjs.com and create a free account
-  2. Add an Email Service (Gmail) → copy your SERVICE_ID
-  3. Create an Email Template with these variables:
-       {{from_name}}, {{from_email}}, {{phone}}, {{subject}}, {{message}}
-     → copy your TEMPLATE_ID
-  4. Go to Account → API Keys → copy your PUBLIC_KEY
-  5. Replace the three placeholder strings below with your real values
-*/
-const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // e.g. "service_abc123"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // e.g. "template_xyz789"
-const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";    // e.g. "AbCdEfGhIjKlMnOp"
+
+const EMAILJS_SERVICE_ID  = "service_gvtsbqz";   // e.g. "service_abc123"
+const EMAILJS_TEMPLATE_ID = "template_8gg222f";  // e.g. "template_xyz789"
+const EMAILJS_PUBLIC_KEY  = "EmnHMjyj0Ms79eAba";    // e.g. "AbCdEfGhIjKlMnOp"
 
 const Contact = () => {
   const formRef = useRef(null);

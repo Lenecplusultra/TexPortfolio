@@ -1,29 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .bannerIcon{
-        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
-    }
-    .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
-         }
-.bgOpacity {
-@apply bg-black bg-opacity-40;
-                  }
-    .contactInput{
-        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
-    }
-.contactTextArea{
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
-}
+@layer components {
+
+  /* ── Nav & hero icons ── */
+  .bannerIcon {
+    @apply w-14 h-14 bg-black bg-opacity-30 text-gray-300 text-xl inline-flex items-center justify-center rounded-lg shadow-shadowOne hover:bg-opacity-50 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 border border-white/5 hover:border-designColor/30;
+  }
+
+  /* ── Resume tab list items ── */
+  .resumeLi {
+    @apply w-full h-16 bg-black bg-opacity-20 text-base font-mono text-gray-400 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] uppercase tracking-widest hover:text-white;
+  }
+
+  .bgOpacity {
+    @apply bg-black bg-opacity-40;
+  }
+
+  /* ── Contact inputs ── */
+  .contactInput {
+    @apply w-full h-12 rounded-lg border-[1px] border-white/10 bg-[#0e1014] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 font-mono text-sm;
+  }
+
+  .contactTextArea {
+    @apply w-full rounded-lg border-[1px] border-white/10 bg-[#0e1014] text-lightText px-4 py-3 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 resize-none font-mono text-sm;
+  }
+
+  /* ── Section wrapper alternating bg ── */
+  .sectionAlt {
+    @apply bg-[#0e1014];
+  }
+
+  /* ── Subtle glow dot ── */
+  .glowDot {
+    @apply w-1.5 h-1.5 rounded-full bg-designColor inline-block;
+  }
 }
 
+/* Active nav link */
 .active {
-    color: white;
+  color: white;
 }
-.scrollbar-hide::-webkit-scrollbar{
-    display: none;
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mono font utility */
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Grain overlay on body for subtle texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.018;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
 }
