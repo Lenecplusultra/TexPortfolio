@@ -6,11 +6,11 @@ import { logo } from "../../assets/index";
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
-      
+
       {/* Profile and Socials */}
       <div className="w-full h-full flex flex-col items-start gap-4">
         <img
-          className="w-16 h-16 object-cover rounded-full border-[2px] border-gray-600 -ml-100000"
+          className="w-16 h-16 object-cover rounded-full border-[2px] border-gray-600"
           src={logo}
           alt="Tex Yonzo"
         />
@@ -42,15 +42,15 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Quick Links with react-scroll */}
+      {/* Quick Links */}
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">Quick Links</h3>
         <ul className="flex flex-col gap-2 font-titleFont font-medium py-6">
           {[
-            { label: 'About', to: 'about' },
+            { label: 'About',    to: 'about'    },
             { label: 'Projects', to: 'projects' },
-            { label: 'Contact', to: 'contact' },
-            { label: 'Resume', to: 'resume' },
+            { label: 'Contact',  to: 'contact'  },
+            { label: 'Resume',   to: 'resume'   },
           ].map(({ label, to }) => (
             <li key={to}>
               <Link
@@ -68,27 +68,27 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* Resources with real links */}
+      {/* Resources */}
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">Resources</h3>
         <ul className="flex flex-col gap-2 font-titleFont font-medium py-6 text-sm">
           <li>
             <a
-              href="/ResumeTex_open.pdf"
-              download
-              className="text-gray-300 hover:text-designColor duration-300"
+              href="/TexPortfolio/Resume_Tex_Yonzo.pdf"
+              download="Resume_Tex_Yonzo.pdf"
+              className="text-gray-300 hover:text-designColor duration-300 flex items-center gap-2"
             >
               Resume (PDF)
             </a>
           </li>
           <li>
             <a
-              href="https://github.com/texyonzo"
+              href="https://github.com/Lenecplusultra"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-designColor duration-300"
             >
-              Portfolio GitHub
+              GitHub
             </a>
           </li>
         </ul>

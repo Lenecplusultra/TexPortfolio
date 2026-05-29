@@ -1,21 +1,32 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import Title from '../layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
 import Achievement from './Achievement';
-import Experience from "./Experience"
+import Experience from "./Experience";
+import { FaDownload } from "react-icons/fa";
 
 const Resume = () => {
-   const [educationData, setEducationData] = useState(true);
-   const [skillData, setSkillData] = useState(false);
-   const [experienceData, setExperienceData] = useState(false);
-   const [achievementData, setAchievementData] = useState(false);
+  const [educationData,  setEducationData]  = useState(true);
+  const [skillData,      setSkillData]      = useState(false);
+  const [experienceData, setExperienceData] = useState(false);
+  const [achievementData,setAchievementData]= useState(false);
+
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
-      <div className="flex justify-center items-center text-center">
+      <div className="flex flex-col justify-center items-center text-center gap-4">
         <Title title="~~ My Journey ~~" des="My Resume" />
+        <a
+          href="/TexPortfolio/Resume_Tex_Yonzo.pdf"
+          download="Resume_Tex_Yonzo.pdf"
+          className="flex items-center gap-2 px-6 py-3 bg-designColor text-white text-sm uppercase tracking-widest font-semibold rounded-lg hover:bg-opacity-80 duration-300 mt-2"
+        >
+          <FaDownload />
+          Download Resume
+        </a>
       </div>
-      <div>
+
+      <div className="mt-10">
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           <li
             onClick={() =>
@@ -25,9 +36,7 @@ const Resume = () => {
               setAchievementData(false)
             }
             className={`${
-              educationData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
+              educationData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
             Education
@@ -53,9 +62,7 @@ const Resume = () => {
               setAchievementData(false)
             }
             className={`${
-              experienceData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
+              experienceData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
             Experience
@@ -68,20 +75,18 @@ const Resume = () => {
               setAchievementData(true)
             }
             className={`${
-              achievementData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
+              achievementData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
             Achievements
           </li>
         </ul>
       </div>
-      {educationData && <Education />}
-      {skillData && <Skills />}
+
+      {educationData   && <Education />}
+      {skillData       && <Skills />}
       {achievementData && <Achievement />}
-      {experienceData && <Experience />}
- 
+      {experienceData  && <Experience />}
     </section>
   );
 }
