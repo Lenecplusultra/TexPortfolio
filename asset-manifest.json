@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TexPortfolio/static/css/main.55aec12a.css",
-    "main.js": "/TexPortfolio/static/js/main.efe8a886.js",
+    "main.css": "/TexPortfolio/static/css/main.040b185d.css",
+    "main.js": "/TexPortfolio/static/js/main.0330c9c4.js",
     "static/js/928.1cda5d37.chunk.js": "/TexPortfolio/static/js/928.1cda5d37.chunk.js",
+    "static/media/bannerImg.png": "/TexPortfolio/static/media/bannerImg.cdff01e68588469b7ede.png",
+    "static/media/logo.png": "/TexPortfolio/static/media/logo.cdff01e68588469b7ede.png",
     "static/media/projectFour.jpg": "/TexPortfolio/static/media/projectFour.b7ba470ab0ff4c3c16ac.jpg",
     "static/media/projectFive.jpg": "/TexPortfolio/static/media/projectFive.391001d92c3ae8abd07e.jpg",
     "static/media/projectTwo.jpg": "/TexPortfolio/static/media/projectTwo.f600db81a5380e74ca39.jpg",
     "static/media/projectThree.jpeg": "/TexPortfolio/static/media/projectThree.96f6c3887df1497081f4.jpeg",
-    "static/media/bannerImg.png": "/TexPortfolio/static/media/bannerImg.01d95547969449de64a5.png",
-    "static/media/logo.png": "/TexPortfolio/static/media/logo.01d95547969449de64a5.png",
     "static/media/contactImg.png": "/TexPortfolio/static/media/contactImg.94db3d3bd41c1a9093a0.png",
     "static/media/projectOne.jpg": "/TexPortfolio/static/media/projectOne.c22f73f695c7af001f37.jpg",
     "index.html": "/TexPortfolio/index.html",
-    "main.55aec12a.css.map": "/TexPortfolio/static/css/main.55aec12a.css.map",
-    "main.efe8a886.js.map": "/TexPortfolio/static/js/main.efe8a886.js.map",
+    "main.040b185d.css.map": "/TexPortfolio/static/css/main.040b185d.css.map",
+    "main.0330c9c4.js.map": "/TexPortfolio/static/js/main.0330c9c4.js.map",
     "928.1cda5d37.chunk.js.map": "/TexPortfolio/static/js/928.1cda5d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55aec12a.css",
-    "static/js/main.efe8a886.js"
+    "static/css/main.040b185d.css",
+    "static/js/main.0330c9c4.js"
   ]
 }
