@@ -35,7 +35,7 @@ const LeftBanner = () => {
           I build cloud-native backends, distributed systems, and AI-powered applications.
           From event-driven order pipelines to MCP-powered engineering assistants,
           I turn complex problems into clean, scalable software.
-          Always shipping — one system at a time.
+          Always shipping... one system at a time.
         </p>
       </div>
      {/* Media */}
