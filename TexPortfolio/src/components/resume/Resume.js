@@ -16,7 +16,7 @@ const Resume = () => {
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="w-full flex justify-center">
         <Title
-          title="~~ My Journey ~~"
+          title="  ~~ My Journey ~~"
           des="My Resume"
         />
       </div>

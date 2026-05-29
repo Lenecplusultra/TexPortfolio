@@ -1,59 +1,25 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiGo, SiApachekafka, SiDocker, SiPython } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedinIn, FaAws } from "react-icons/fa";
+import { SiPython, SiApachekafka, SiDocker } from "react-icons/si";
 
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">
-          Find me on
-        </h2>
+        <h2 className="text-base uppercase font-titleFont mb-4">Find me on</h2>
         <div className="flex gap-4">
-          <a
-            href="https://www.instagram.com/texyonzo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bannerIcon"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://x.com/Lenecplusultraa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bannerIcon"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://linkedin.com/in/texyonzo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bannerIcon"
-          >
-            <FaLinkedinIn />
-          </a>
+          <a href="https://www.instagram.com/texyonzo" target="_blank" rel="noopener noreferrer" className="bannerIcon"><FaInstagram /></a>
+          <a href="https://x.com/Lenecplusultraa" target="_blank" rel="noopener noreferrer" className="bannerIcon"><FaTwitter /></a>
+          <a href="https://linkedin.com/in/texyonzo" target="_blank" rel="noopener noreferrer" className="bannerIcon"><FaLinkedinIn /></a>
         </div>
       </div>
       <div>
-        <h2 className="text-base uppercase font-titleFont mb-4">
-          Best Skill On
-        </h2>
+        <h2 className="text-base uppercase font-titleFont mb-4">Best Skill On</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon" title="Python">
-            <SiPython />
-          </span>
-          <span className="bannerIcon" title="Apache Kafka">
-            <SiApachekafka />
-          </span>
-          <span className="bannerIcon" title="AWS">
-            <FaAws />
-          </span>
-          <span className="bannerIcon" title="Docker">
-            <SiDocker />
-          </span>
+          <span className="bannerIcon" title="Python"><SiPython /></span>
+          <span className="bannerIcon" title="Apache Kafka"><SiApachekafka /></span>
+          <span className="bannerIcon" title="AWS"><FaAws /></span>
+          <span className="bannerIcon" title="Docker"><SiDocker /></span>
         </div>
       </div>
     </div>
