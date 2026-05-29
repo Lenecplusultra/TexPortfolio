@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TexPortfolio/static/css/main.55aec12a.css",
-    "main.js": "/TexPortfolio/static/js/main.8304af29.js",
+    "main.js": "/TexPortfolio/static/js/main.efe8a886.js",
     "static/js/928.1cda5d37.chunk.js": "/TexPortfolio/static/js/928.1cda5d37.chunk.js",
     "static/media/projectFour.jpg": "/TexPortfolio/static/media/projectFour.b7ba470ab0ff4c3c16ac.jpg",
     "static/media/projectFive.jpg": "/TexPortfolio/static/media/projectFive.391001d92c3ae8abd07e.jpg",
@@ -13,11 +13,11 @@
     "static/media/projectOne.jpg": "/TexPortfolio/static/media/projectOne.c22f73f695c7af001f37.jpg",
     "index.html": "/TexPortfolio/index.html",
     "main.55aec12a.css.map": "/TexPortfolio/static/css/main.55aec12a.css.map",
-    "main.8304af29.js.map": "/TexPortfolio/static/js/main.8304af29.js.map",
+    "main.efe8a886.js.map": "/TexPortfolio/static/js/main.efe8a886.js.map",
     "928.1cda5d37.chunk.js.map": "/TexPortfolio/static/js/928.1cda5d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55aec12a.css",
-    "static/js/main.8304af29.js"
+    "static/js/main.efe8a886.js"
   ]
 }
