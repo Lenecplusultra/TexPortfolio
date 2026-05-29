@@ -1,41 +1,41 @@
-import { FaCloud, FaFlask, FaRobot, FaDatabase, FaLaptopCode } from "react-icons/fa";
-import { SiTestinglibrary } from "react-icons/si";
+import { FaCloud, FaRobot, FaDatabase, FaLaptopCode, FaProjectDiagram } from "react-icons/fa";
+import { SiApachekafka } from "react-icons/si";
 
 export const featuresData = [
   {
     id: 1,
-    icon: <FaRobot />,
-    title: "AI Integration",
-    des: "Built intelligent tools with LangChain and GPT-4 for semantic document search and automation.",
+    icon: <FaProjectDiagram />,
+    title: "Distributed Systems",
+    des: "Building scalable backend infrastructure, concurrency-driven services, and fault-tolerant architectures.",
   },
   {
     id: 2,
-    icon: <FaFlask />,
-    title: "API Development",
-    des: "Developed secure REST APIs using Flask and Node.js to handle data workflows and transactions.",
+    icon: <FaCloud />,
+    title: "Cloud Platforms",
+    des: "Designing cloud-native applications using AWS, Docker, CI/CD pipelines, and managed services.",
   },
   {
     id: 3,
-    icon: <SiTestinglibrary />,
-    title: "Automation Testing",
-    des: "Automated EHR system testing using Selenium and TestNG, reducing bugs by 90%.",
+    icon: <FaRobot />,
+    title: "AI Applications",
+    des: "Developing intelligent systems with LLMs, tool calling, retrieval pipelines, and workflow automation.",
   },
   {
     id: 4,
-    icon: <FaDatabase />,
-    title: "Database Optimization",
-    des: "Enhanced MySQL/PostgreSQL performance by tuning queries and improving throughput by 40%.",
+    icon: <FaLaptopCode />,
+    title: "Backend Engineering",
+    des: "Creating secure APIs, authentication systems, data pipelines, and core business services.",
   },
   {
     id: 5,
-    icon: <FaCloud />,
-    title: "Cloud & Hosting",
-    des: "Deployed scalable full-stack apps using AWS and Firebase, integrating auth and DB services.",
+    icon: <FaDatabase />,
+    title: "Data & Analytics",
+    des: "Transforming operational data into actionable dashboards, real-time insights, and automated alerts.",
   },
   {
     id: 6,
-    icon: <FaLaptopCode />,
-    title: "UX/UI Delivery",
-    des: "Delivered responsive front-end interfaces in React with JWT-secured flows and real-time updates.",
+    icon: <SiApachekafka />,
+    title: "Product Engineering",
+    des: "Taking ideas from requirements and architecture all the way through deployment and iteration.",
   },
 ];

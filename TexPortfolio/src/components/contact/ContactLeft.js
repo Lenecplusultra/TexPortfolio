@@ -13,10 +13,10 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Tex Yonzo</h3>
         <p className="text-lg font-normal text-gray-400">
-          AI & Full-Stack Developer
+          Software Engineer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Software engineering student at Kennesaw State University. Passionate about building intelligent, scalable systems using modern AI and web technologies.
+          CS student at Kennesaw State University. Building distributed systems, cloud platforms, and AI-powered applications that solve real engineering problems.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+1 470 662 5664</span>

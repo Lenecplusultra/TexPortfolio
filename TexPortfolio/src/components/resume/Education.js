@@ -12,15 +12,15 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2021 - 2025</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2021 - 2026</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Education</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="BSc in Computer Science"
-            subTitle="Kennesaw State University (Expected May 2026)"
-            result="GPA: 4.0"
-            des="Relevant Courses: Data Structures, Operating Systems, AI, Mobile App Dev, Software Engineering"
+            subTitle="Kennesaw State University (Dec 2025)"
+            result="GPA: 3.82/4.0"
+            des="Relevant Courses: Data Structures & Algorithms, Distributed Systems, Operating Systems, Computer Networks, Parallel & Distributed Computing, Software Engineering, AI"
           />
           <ResumeCard
             title="iOS Development Bootcamp"
@@ -34,34 +34,32 @@ const Education = () => {
             result="In Progress"
             des="Solving advanced data structures and algorithms problems weekly; preparing for top-tier technical interviews in a structured cohort."
           />
-
         </div>
       </div>
       {/* part Two */}
-
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2022 - 2023</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2022 - Present</p>
+          <h2 className="text-3xl md:text-4xl font-bold">Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Software Engineer Intern"
-            subTitle="PACI, Remote (Jan 2025 – Present)"
-            result="Atlanta GA"
-            des="Built and deployed a secure alumni networking platform with authentication, role-based access, and automated CI/CD pipeline via GitHub Actions."
+            subTitle="PACI, Remote (May 2025 – Sep 2025)"
+            result="Atlanta, GA"
+            des="Architected RBAC system across 3 permission tiers; cut CI/CD cycle from 45 min to under 5 min; reduced PostgreSQL query latency ~60% through targeted indexing and query plan analysis."
           />
           <ResumeCard
             title="Software Engineer Intern"
             subTitle="Intelligentsia SA, Yaounde (May 2023 – Aug 2023)"
             result="Cameroon"
-            des="Led BPM platform dev w/ Bonita Studio for 20+ workflows; built secure APIs reducing manual work by 50% and improved response speed by 35% via QA."
+            des="Designed modular Java backend services automating 20+ enterprise workflows across 5 departments; built REST API layer bridging modern services with legacy systems, reducing manual processing by 50%."
           />
           <ResumeCard
             title="Software Engineer Intern"
             subTitle="Intelligentsia SA, Yaounde (May 2022 – Aug 2022)"
             result="Cameroon"
-            des="Automated EHR testing using Selenium (90% bug reduction); enhanced DB speed 40% via SQL optimization; boosted test cycles w/ TestNG."
+            des="Implemented Selenium/TestNG regression suites achieving 90% bug reduction; enhanced DB speed 40% via SQL optimization; resolved performance bottlenecks under concurrent load."
           />
         </div>
       </div>

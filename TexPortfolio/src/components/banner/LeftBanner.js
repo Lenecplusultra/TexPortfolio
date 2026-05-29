@@ -4,11 +4,17 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Full Stack Developer.", "UI Designer.", "Software Engineer"],
+      words: [
+        "Software Engineer.",
+        "Systems Builder.",
+        "Backend Engineer.",
+        "Distributed Systems Dev.",
+        "AI Applications Dev.",
+      ],
       loop: true,
-      typeSpeed: 20,
-      deleteSpeed: 10,
-      delaySpeed: 2000,
+      typeSpeed: 40,
+      deleteSpeed: 20,
+      delaySpeed: 2500,
     });
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
@@ -26,10 +32,10 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I build intelligent, responsive applications that bridge real-world needs with scalable tech. 
-          From automating telecom billing to crafting GPT-powered assistants, 
-          I focus on creating tools that improve efficiency and elevate user experience. 
-          Always pushing the limits—one line of code at a time.
+          I build cloud-native backends, distributed systems, and AI-powered applications.
+          From event-driven order pipelines to MCP-powered engineering assistants,
+          I turn complex problems into clean, scalable software.
+          Always shipping — one system at a time.
         </p>
       </div>
      {/* Media */}
