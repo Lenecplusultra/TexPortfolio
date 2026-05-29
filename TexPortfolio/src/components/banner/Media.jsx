@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiGo, SiApachekafka, SiDocker } from "react-icons/si";
+import { SiGo, SiApachekafka, SiDocker, SiPython } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
 const Media = () => {
@@ -42,8 +42,8 @@ const Media = () => {
           Best Skill On
         </h2>
         <div className="flex gap-4">
-          <span className="bannerIcon" title="Go">
-            <SiGo />
+          <span className="bannerIcon" title="Python">
+            <SiPython />
           </span>
           <span className="bannerIcon" title="Apache Kafka">
             <SiApachekafka />

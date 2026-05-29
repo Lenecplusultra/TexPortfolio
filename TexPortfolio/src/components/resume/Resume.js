@@ -14,12 +14,18 @@ const Resume = () => {
 
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
-      <div className="flex flex-col justify-center items-center text-center gap-4">
-        <Title title="~~ My Journey ~~" des="My Resume" />
+      <div className="w-full flex justify-center">
+        <Title
+          title="~~ My Journey ~~"
+          des="My Resume"
+        />
+      </div>
+
+      <div className="mt-6 flex justify-center">
         <a
           href="/TexPortfolio/Resume_Tex_Yonzo.pdf"
-          download="Resume_Tex_Yonzo.pdf"
-          className="flex items-center gap-2 px-6 py-3 bg-designColor text-white text-sm uppercase tracking-widest font-semibold rounded-lg hover:bg-opacity-80 duration-300 mt-2"
+          download
+          className="flex items-center gap-2 px-6 py-3 bg-designColor text-white rounded-lg"
         >
           <FaDownload />
           Download Resume
