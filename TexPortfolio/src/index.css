@@ -4,70 +4,128 @@
 @tailwind utilities;
 
 @layer components {
-
-  /* ── Nav & hero icons ── */
   .bannerIcon {
     @apply w-14 h-14 bg-black bg-opacity-30 text-gray-300 text-xl inline-flex items-center justify-center rounded-lg shadow-shadowOne hover:bg-opacity-50 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300 border border-white/5 hover:border-designColor/30;
   }
-
-  /* ── Resume tab list items ── */
   .resumeLi {
-    @apply w-full h-16 bg-black bg-opacity-20 text-base font-mono text-gray-400 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] uppercase tracking-widest hover:text-white;
+    @apply w-full h-14 bg-black bg-opacity-20 text-sm font-mono text-gray-500 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] uppercase tracking-widest hover:text-white transition-all;
   }
-
-  .bgOpacity {
-    @apply bg-black bg-opacity-40;
-  }
-
-  /* ── Contact inputs ── */
+  .bgOpacity { @apply bg-black bg-opacity-40; }
   .contactInput {
-    @apply w-full h-12 rounded-lg border-[1px] border-white/10 bg-[#0e1014] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 font-mono text-sm;
+    @apply w-full h-12 rounded-lg border-[1px] border-white/10 bg-[#0a0c10] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 font-mono text-sm;
   }
-
   .contactTextArea {
-    @apply w-full rounded-lg border-[1px] border-white/10 bg-[#0e1014] text-lightText px-4 py-3 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 resize-none font-mono text-sm;
-  }
-
-  /* ── Section wrapper alternating bg ── */
-  .sectionAlt {
-    @apply bg-[#0e1014];
-  }
-
-  /* ── Subtle glow dot ── */
-  .glowDot {
-    @apply w-1.5 h-1.5 rounded-full bg-designColor inline-block;
+    @apply w-full rounded-lg border-[1px] border-white/10 bg-[#0a0c10] text-lightText px-4 py-3 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-designColor/50 duration-300 resize-none font-mono text-sm;
   }
 }
 
-/* Active nav link */
-.active {
-  color: white;
+.active { color: white; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+html { scroll-behavior: smooth; }
+.font-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+/* ── Animated grid background ── */
+body {
+  background-color: #0d0f14;
+  position: relative;
 }
 
-/* Hide scrollbar */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Mono font utility */
-.font-mono {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-}
-
-/* Grain overlay on body for subtle texture */
-body::before {
+body::after {
   content: '';
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 999;
-  opacity: 0.018;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 128px 128px;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255,1,79,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,1,79,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 0%, black 40%, transparent 100%);
+  animation: gridShift 20s linear infinite;
 }
+
+@keyframes gridShift {
+  0%   { background-position: 0 0, 0 0; }
+  100% { background-position: 0 60px, 60px 0; }
+}
+
+/* ── Ambient red glow top center ── */
+body::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(255,1,79,0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Floating particles (CSS-only) ── */
+@keyframes floatUp {
+  0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.2; }
+  100% { transform: translateY(-100vh) translateX(30px) scale(0.5); opacity: 0; }
+}
+
+.particle {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: #ff014f;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: floatUp linear infinite;
+}
+
+/* ── Scan line effect on cards on hover ── */
+@keyframes scanLine {
+  0%   { top: -100%; }
+  100% { top: 200%; }
+}
+
+.scan-hover:hover::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(transparent, rgba(255,1,79,0.03), transparent);
+  animation: scanLine 1.5s ease-in-out;
+  pointer-events: none;
+}
+
+/* ── Typing cursor blink ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Tag pulse on hover ── */
+.tech-tag:hover {
+  box-shadow: 0 0 8px currentColor;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+/* ── Smooth section fade-in ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeInUp 0.6s ease-out both;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Red accent scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0d0f14; }
+::-webkit-scrollbar-thumb { background: #ff014f33; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #ff014f66; }
