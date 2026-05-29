@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { SiGo, SiApachekafka, SiDocker } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 const Media = () => {
   return (
@@ -41,17 +42,17 @@ const Media = () => {
           Best Skill On
         </h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaReact />
+          <span className="bannerIcon" title="Go">
+            <SiGo />
           </span>
-          <span className="bannerIcon">
-            <SiNextdotjs />
+          <span className="bannerIcon" title="Apache Kafka">
+            <SiApachekafka />
           </span>
-          <span className="bannerIcon">
-            <SiTailwindcss />
+          <span className="bannerIcon" title="AWS">
+            <FaAws />
           </span>
-          <span className="bannerIcon">
-            <SiFigma />
+          <span className="bannerIcon" title="Docker">
+            <SiDocker />
           </span>
         </div>
       </div>
