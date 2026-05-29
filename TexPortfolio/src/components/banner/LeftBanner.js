@@ -108,7 +108,7 @@ const LeftBanner = () => {
           {[
             { value: '3+', label: 'Years coding' },
             { value: '6+', label: 'Projects shipped' },
-            { value: '4.0', label: 'GPA' },
+            { value: '3.82', label: 'GPA' },
           ].map(({ value, label }) => (
             <div key={label} className="flex flex-col">
               <span

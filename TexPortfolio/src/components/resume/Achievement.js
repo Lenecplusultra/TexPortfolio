@@ -17,8 +17,8 @@ const Achievement = () => {
       <div className="w-full border-l-[3px] border-designColor/20 flex flex-col gap-8">
         <ResumeCard
           title="Project Manager"
-          subTitle="Byte Club — Kennesaw State University (2025 – Present)"
-          result="KSU"
+          subTitle="Byte Club — Kennesaw State University (Jan 2023 – Aug 2024)"
+          result="PKFokam Institute"
           des="Leading project planning, sprint coordination, and delivery for student engineering initiatives. Facilitating cross-functional collaboration between developers, designers, and stakeholders."
         />
         <ResumeCard
